@@ -1,0 +1,82 @@
+
+updated prefab links for office buildings in launch site
+Rocket factory / backup
+launch site office buildings and planters final meshes/prefabs/cols
+Rocket factory / mesh optimizations / tweaks / various fixes
+Temporary workaround for hapis mt signs decal bug
+Replaced lightEx intensity auto scale with explicit scale; fixed torch flicker and strong candle hat
+Adjusted particle emission intensities for camp fire, furnace, torch
+Clamp screen blood effect lighting to 0-1
+This commit has been marked as private, so it is hidden
+Fixed vending machine entity having itself as a child object (lolwut?)
+Adjusted emissive materials to match new intensity scale
+Attempt at fixing broken reflections on hapis rivers
+phrases
+compile fix
+Proper waterfall sounds.
+LODs on waterfall PFX.
+Heightmap.
+compile fix
+slightly higher recoil on the AK47
+right clicking items on mailbox properly inserts it into the correct slot
+added dropbox
+Enabled some disabled stuff.
+Missing prefabs.
+Hapis:
+Added some more loot.
+Added a bunch of recyclers and repair benches.
+Plus various.
+Rocket factory / added lift door / fixed roof door positions
+fixed quick-snap recoil compensation when compensating during full auto
+storage containers spill their contents out from their drop position when killed
+Shotgun trap sound tweaks
+progress backup
+This commit has been marked as private, so it is hidden
+Reapply 20887
+NRE fix
+Voice limiting tweaks
+Forced offscreen water normal compute & write, ignoring reflection keyword
+Rocket factory elevator shafts
+laser sight no longer reduces ADS aimcone
+laser sight removes aimsway
+laser sight reduces hipfire aimcone by 25% 
+laser sight more visible at distance
+laser sight much cheaper
+Last minute fixes 1/2
+Re-enabled moon phases as they were accidentally disabled
+This commit has been marked as private, so it is hidden
+This commit has been marked as private, so it is hidden
+Testing decal fix, touched shaders involved
+Switched mt_signs decal material to alpha blend instead of cutout (testing)
+More loot on Hapis, nobuild zones, random fixes.
+Touching the stone worldmodel material
+launch_site scene dressing update
+new pavement piece to work off loading bays
+new office building model to seal the campus courtyard space better
+CraggyIsland cleanup
+Sanity checks when retrieving next position from NavAgent
+Server/Client bucket
+Updated how manifest is loaded
+Prefab preprocessing fixes (RUST-1463, RUST-1664)
+Restored stone world model material (was referencing stuff from the old Hapis tunnels)
+Subtracting 20887
+lift animation controller for 12,18,21 meters, updated lift prefabs individually in the factory shafts
+thompson 10 hqm cheaper
+ak47 has 50% more durability
+skin approval
+skin icons
+missing file (compile)
+compile fix
+merge into main
+pump shotgun costs 5 less hqm
+manifest, recoilcomp convar
+merge from main
+applied new recoil etc to most weapons and balanced them
+added uniform shake effect to guns
+Add ability to limit voice counts for individual sounds globally
+Global voice limiting on bullet impacts (shotgun trap perf fix)
+Add shotgun trap sounds
+Maybe I'll put it into the right branch.
+Various
+progress
+Rocket factory progress /backup
