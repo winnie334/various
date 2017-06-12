@@ -6,7 +6,7 @@ import struct
 import time
 
 class WindowsBalloonTip:
-    def __init__(self, title, msg, icon):
+    def __init__(self, title, msg, icon, rclass=0):
         message_map = {
                 win32con.WM_DESTROY: self.OnDestroy,
         }
@@ -15,10 +15,13 @@ class WindowsBalloonTip:
         hinst = wc.hInstance = GetModuleHandle(None)
         wc.lpszClassName = "PythonTaskbar"
         wc.lpfnWndProc = message_map # could also specify a wndproc.
-        classAtom = RegisterClass(wc)
+        if rclass == 0:
+            self.classAtom = RegisterClass(wc)
+        else:
+            self.classAtom = rclass
         # Create the Window.
         style = win32con.WS_OVERLAPPED | win32con.WS_SYSMENU
-        self.hwnd = CreateWindow( classAtom, "Taskbar", style, \
+        self.hwnd = CreateWindow( self.classAtom, "Taskbar", style, \
                 0, 0, win32con.CW_USEDEFAULT, win32con.CW_USEDEFAULT, \
                 0, 0, hinst, None)
         UpdateWindow(self.hwnd)
@@ -35,16 +38,20 @@ class WindowsBalloonTip:
         Shell_NotifyIcon(NIM_MODIFY, \
                          (self.hwnd, 0, NIF_INFO, win32con.WM_USER+20,\
                           hicon, "Balloon  tooltip",msg,200,title))
-        # self.show_balloon(title, msg)
-        time.sleep(10)
+          #self.show_balloon(title, msg)
+        time.sleep(6)
         DestroyWindow(self.hwnd)
     def OnDestroy(self, hwnd, msg, wparam, lparam):
         nid = (self.hwnd, 0)
-        Shell_NotifyIcon(NIM_DELETE, nid)
+        try:
+            Shell_NotifyIcon(NIM_DELETE, nid)
+        except:
+            pass
         PostQuitMessage(0) # Terminate the app.
 
-def balloon_tip(title, msg, icon):
-    w=WindowsBalloonTip(title, msg, icon)
+def balloon_tip(title, msg, icon, rclass=0):
+    w=WindowsBalloonTip(title, msg, icon, rclass)
+    return w.classAtom
 
 if __name__ == '__main__':
-    balloon_tip("Title for popup", "This is the popup's message")
+    balloon_tip("Title for popup", "This is the popup's message", 'rusticon.ico')

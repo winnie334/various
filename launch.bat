@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Python36-32\python.exe" C:\Users\winnie33\PycharmProjects\testie\RustCommitTracker.py

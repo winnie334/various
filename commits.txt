@@ -1,4 +1,3 @@
-
 updated prefab links for office buildings in launch site
 Rocket factory / backup
 launch site office buildings and planters final meshes/prefabs/cols
@@ -80,3 +79,142 @@ Maybe I'll put it into the right branch.
 Various
 progress
 Rocket factory progress /backup
+grand canyon wip
+Interiors WIP for the second largest office building, scene update
+wip
+nook & cranny cliffs instead of dull flat mountain slopes wip
+fixed python smoke screen
+Let's delete these third party assets and see what happens
+Subtracting decal workaround at 20934
+Touched decal shaders after workaround subtraction
+Fixed fucked up viewmodel flickering when spamming RMB
+Rocket factory rail tracks
+checkpoint greybox
+office interiors LODs/COLs/Prefabs
+scene update
+Canyon area
+Rocket scaffolding progress
+Rocket scaffolding scene update
+Fixed viewmodel going crazy when ADS immediately after weapon deploy
+Forgot to save after adding a comment
+Nuked a compile warning
+Added internal/replacement decal shaders to always included list
+dropbox emission fixed
+mailbox no longer auto submits items (must press button)
+dropbox no longer auto submits items
+dropbox stacks submitted items with like-kind
+shotgun pellets have an affinity to stay grouped to the center (tighter spread)
+shotguns have much faster damage falloff (30~m effective range)
+Fixed crazy emissive laser disco blobs
+Fixed emission on a few beam materials, furnace large; tweaked fire particles
+Added soft particles toggle to particles/additive hdr shader
+removed unused .fbx files
+Stripped unnecessary features from decals to reduce max sampler count
+Small tweaks to the small clutter rock scales
+Fixed foliage shader handling of batched meshes
+Added maxpeerspersecond client convar (counteracts P2P packet flooding)
+Optimized BasePlayer.Find_Clientside / FindByID_Clientside / RegisterForVisibility / UnregisterFromVisibility / ClearVisibility
+Rocket factory lift room dressing
+Adjusted maxrpcspersecond default value
+Launchsite office side bespoke pavement meshes/LODs/COLs/Prefabs
+Modular pavement building kit prefabs (should be used to prototype then rebuilt in max, culls at 100)
+Launch_site scene update
+Space center sign model LODs/Prefab/COLs
+Rocket factory / created LODs and colliders for collapsed walkways / cleaned up walkway meshes
+Rocket factory / split rooms into separate objects / scene update
+terrain
+Grand canyon valley wip.
+Fixed the mismatched grass colors & spec, just to soothe my delicate soul.
+dropbox no longer tosses items submitted when full into the world (stay in input slot)
+use curve to weight aimcones
+missing files
+splatting
+Roof module, scene update
+Optimized Anisotropic Filtering and Trilinear Filtering settings on workshop skins (perf)
+No longer globally force the minimum AF setting on all textures, only limit the maximum instead (perf)
+Plugins
+Update core shader base; repacked core/generic
+Updated core/hair shader to latest
+Rocket factory / lift shaft ladders / UV map fixes / ladder fixes / fixed gaps in geometry / material tweaks
+pre-desert
+Some camera & env settings
+Scene backup
+Scene stuff
+Clamp NPC walk animation speed (effect spamming fix)
+fixed tread material so it doesn't look like it came from Jennifer Lopez's wardrobe
+shotgun spread mods
+Added instancing support to deferred decals (still testing, disabled by default)
+Added decal.instancing, decal.limit and decal.capacity convars
+Rocket factory silo
+Rocket factory / vertex paint / tweaks and fixes
+Added decal.clear console command
+Fixed hair issue with multiple cameras
+Fixed core shaders compile warning
+AK47 slightly higher horizontal recoil
+AK47 has slightly lower max aimcone
+DBS less recoil
+DBS less aimcone
+Eoka less aimcone
+handmade shell does 9 damage per pellet instead of 7
+handmade shell spread increased slightly
+handmade shell pellet velocity decreased
+shotgun slugs half price
+buckshot damage falloff decreased (good up to 40m instead of 25)
+buckshot/handmade has a more even distribution in general but 20% of the pellets are weighted to the center
+automatic weapons + SAR have their aimcones weighted so a few more shots will land in the center rather than the edges
+fixed thompson having wrong screenshake effect
+added server.woundingenabled - if set to false players always die instead of wounding
+fixed bug where recoil was using spherical math instead of circular
+added basic player bot script for weapons testing
+server compile fix
+protocol++
+skin approval + icons
+Melee weapon impact polish
+Mix tweaks
+Misc sound polish
+Foliage test
+Silenced TrackIR error when DLL was not found even though it exists in the registry
+Merge from main
+Fixed item info showing up as null when destroying world items due to invalid position
+checkpoint model WIP
+Checkpoint model LODs/Prefab/COLs
+Overgrowth dressing scene update
+Plugin updates
+Added transform caching to decals
+Optimized decal command buffer refresh
+Enabled decal instancing by default
+All BatchKey structs now implement IEquatable (eliminates GC when used as key in dictionary)
+Server compile fix
+Get developer list from manifest
+Merge from decal_instancing
+Only report exceptions from official servers again
+Exception reporting filtering
+ground meshes
+launchsite scene update
+separate material for rocket_decals without decal functionality
+Tweaked fire particle materials, including flame thrower
+Removing fucked component reference from server.prefab
+Subtracting 20975 because it fucked the bolt action recoil animation (classic gooseman)
+Steam Items http://bit.ly/2rb5pWE
+desert area wip
+Launch_site scene update, dressing sciency side
+Added opacity mask dithering to core/hair shader
+Updated core shader set to latest
+Warehouse backup
+Analytic fixes
+rethrow caught exceptions so we actually fail properly
+dressing progress backup
+Fixed all animals spawning invisible bear footprints in a fucked up convoluted mess
+Checked the instancing checkbox on some decals that didn't have it set
+doors placement
+Re-enabled far splat uvmix on highest shader quality level (600)
+Fixed grass shader compilation
+Launch site warehouse progress
+Launchsite warehouse rework progress
+Fixed recurrent shader compilation warning
+More south coast.
+fixed bow / crossbow  worldmodel  culling preventing them from animating
+More crazy desert
+oasis area
+Various tweaks and more desert stuff.
+Dunes & stuff
